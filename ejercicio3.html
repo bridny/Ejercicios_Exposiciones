@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var fecha1 = new Date();
+        var tiempo1 = fecha1.getTime();
+        var nombre = prompt("Introduce el nombre: ");
+        var ape1 = prompt("Introduce apellido 1: ");
+        var ape2 = prompt("Introduce apellido 2: ");
+        var fecha2 = new Date();
+        var tiempo2 = fecha2.getTime();
+        var total = (tiempo2 - tiempo1) / 1000;
+        total = total.toFixed(1);
+        document.write("En introducir " + nombre + " " + ape1 + " " + ape2 + "ha tardado" + total + "segundos");
+    </script>
+</body>
+</html>
